@@ -1,7 +1,7 @@
 {
-  "name": "active",
+  "name": "Active",
   "version": "1.0.0",
-  "description": "active sim card",
+  "description": "active serial card",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

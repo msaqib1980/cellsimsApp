@@ -113,9 +113,11 @@ function createWindow () {
     height: 650,
     resizable:false,
     maximizable: false,
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
+    backgroundColor: '#282C34',
+    // icon: path.join(__dirname, 'build/icon.png'),
+    // webPreferences: {
+    //   preload: path.join(__dirname, 'preload.js')
+    // }
   })
 
   Menu.setApplicationMenu(menu)
