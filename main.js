@@ -64,13 +64,13 @@ const template = [
     submenu: [
       { role: 'reload' },
       { role: 'forceReload' },
-      { role: 'toggleDevTools' },
+      // { role: 'toggleDevTools' },
       { type: 'separator' },
       { role: 'resetZoom' },
       { role: 'zoomIn' },
       { role: 'zoomOut' },
       { type: 'separator' },
-      { role: 'togglefullscreen' }
+      // { role: 'togglefullscreen' }
     ]
   },
   // { role: 'windowMenu' }
@@ -89,18 +89,18 @@ const template = [
       ])
     ]
   },
-  {
-    role: 'help',
-    submenu: [
-      {
-        label: 'Learn More',
-        click: async () => {
-          const { shell } = require('electron')
-          await shell.openExternal('https://electronjs.org')
-        }
-      }
-    ]
-  }
+  // {
+  //   role: 'help',
+  //   submenu: [
+  //     {
+  //       label: 'Learn More',
+  //       click: async () => {
+  //         const { shell } = require('electron')
+  //         await shell.openExternal('https://electronjs.org')
+  //       }
+  //     }
+  //   ]
+  // }
 ]
 
 const menu = Menu.buildFromTemplate(template)
@@ -125,8 +125,8 @@ function createWindow () {
   // and load the index.html of the app.
   // mainWindow.loadFile('index.html')
 
-  // mainWindow.loadURL('http://app.cellsims.com.s3-website-us-east-1.amazonaws.com')
-  mainWindow.loadURL('http://localhost:8080')
+  mainWindow.loadURL('http://app.cellsims.com.s3-website-us-east-1.amazonaws.com')
+  // mainWindow.loadURL('http://localhost:8080')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
