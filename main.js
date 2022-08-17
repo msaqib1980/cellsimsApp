@@ -8,20 +8,20 @@ const isMac = process.platform === 'darwin'
 
 const template = [
   // { role: 'appMenu' }
-  ...(isMac ? [{
-    label: 'Active',
-    submenu: [
-      { role: 'about' },
-      { type: 'separator' },
-      { role: 'services' },
-      { type: 'separator' },
-      { role: 'hide' },
-      { role: 'hideOthers' },
-      { role: 'unhide' },
-      { type: 'separator' },
-      { role: 'quit' }
-    ]
-  }] : []),
+  // ...(isMac ? [{
+  //   label: 'Active',
+  //   submenu: [
+  //     // { role: 'about' },
+  //     { type: 'separator' },
+  //     { role: 'services' },
+  //     { type: 'separator' },
+  //     { role: 'hide' },
+  //     { role: 'hideOthers' },
+  //     { role: 'unhide' },
+  //     { type: 'separator' },
+  //     { role: 'quit' }
+  //   ]
+  // }] : []),
   // { role: 'fileMenu' }
   {
     label: 'File',
